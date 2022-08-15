@@ -21,6 +21,9 @@ export class ChildComponent implements OnInit, OnChanges {
     );
   }
 
+  // a better approach
+  //@Input() set userName(value: string) { }
+
   ngOnInit(): void {
     console.log(
       '%cchild  %cngOnInit',
@@ -29,7 +32,7 @@ export class ChildComponent implements OnInit, OnChanges {
     );
   }
 
-  
+
   ngDoCheck() {
     console.log(
       '%cchild  %cngDoCheck',
